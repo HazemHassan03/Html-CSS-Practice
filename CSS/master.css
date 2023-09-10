@@ -160,12 +160,8 @@ header {
   top: 0;
   height: 60px;
   background-color: white;
-  overflow: hidden;
   box-shadow: 0 0 10px #ddd;
   z-index: 999;
-}
-header:hover {
-  overflow: visible;
 }
 header .container {
   display: flex;
@@ -245,8 +241,10 @@ header .container > ul > li:nth-last-of-type(1) div {
   -ms-transition: var(--transition);
   -o-transition: var(--transition);
   border-top: 1px solid var(--transparent-color);
+  pointer-events: none;
 }
 header .container > ul > li:nth-last-of-type(1):hover div {
+  pointer-events: all;
   opacity: 1;
   top: 100%;
 }
