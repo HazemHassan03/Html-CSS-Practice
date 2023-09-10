@@ -1994,6 +1994,7 @@ footer .made-by {
   -moz-transition: var(--transition);
   -ms-transition: var(--transition);
   -o-transition: var(--transition);
+  z-index: 9999;
 }
 .to-top:hover {
   background-color: var(--main-color-alt);
